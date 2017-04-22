@@ -35,28 +35,30 @@ body{
 
 .magazine .region{
 	position:absolute;
+	z-index: -1;
 	width: 0px;
 	height: 0px;
 	overflow:hidden;
 	background:#0066FF;
-	opacity:0.2;
+	opacity:0;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	-ms-border-radius:10px;
 	-o-border-radius:10px;
 	border-radius:10px;
-	cursor:pointer;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	cursor:none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 }
 
-/*.magazine .region:hover{
-	opacity:0.5;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=50);
+.magazine .region:hover{
+	opacity:0;
+	z-index: -1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
 }
 
-.magazine .region.zoom{
+/*.magazine .region.zoom{
 	opacity:0.01;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 	filter: alpha(opacity=1);
