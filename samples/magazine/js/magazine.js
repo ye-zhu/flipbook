@@ -77,14 +77,14 @@ function zoomTo(event) {
 // Load regions
 
 function loadRegions(page, element) {
-
-	$.getJSON('pages/'+page+'').
-		done(function(data) {
-
-			$.each(data, function(key, region) {
-				addRegion(region, element);
-			});
-		});
+	// 
+	// $.getJSON(undefined).
+	// 	done(function(data) {
+	//
+	// 		// $.each(data, function(key) {
+	// 		// 	// addRegion(region, element);
+	// 		// });
+	// 	});
 }
 
 // Add region
@@ -121,9 +121,9 @@ function regionClick(event) {
 			$('.magazine-viewport').data().regionClicked = false;
 		}, 100);
 
-		var regionType = $.trim(region.attr('class').replace('region', ''));
+		var regionType = $.trim(region.attr('class').replace('', ''));
 
-		return processRegion(region, regionType);
+		// return processRegion(region, regionType);
 
 	}
 
@@ -136,7 +136,7 @@ function processRegion(region, regionType) {
 	data = decodeParams(region.attr('region-data'));
 
 	switch (regionType) {
-		case 'link' :
+		case '' :
 
 			window.open(data.url);
 
