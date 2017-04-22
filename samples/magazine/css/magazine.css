@@ -33,8 +33,10 @@ body{
 	display:none;
 }
 
-/*.magazine .region{
+.magazine .region{
 	position:absolute;
+	width: 0px;
+	height: 0px;
 	overflow:hidden;
 	background:#0066FF;
 	opacity:0.2;
@@ -45,8 +47,8 @@ body{
 	border-radius:10px;
 	cursor:pointer;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-	filter: alpha(opacity=20);
-}*/
+	filter: alpha(opacity=0);
+}
 
 /*.magazine .region:hover{
 	opacity:0.5;
