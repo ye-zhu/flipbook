@@ -33,7 +33,7 @@ body{
 	display:none;
 }
 
-.magazine .region{
+/*.magazine .region{
 	position:absolute;
 	overflow:hidden;
 	background:#0066FF;
@@ -46,7 +46,7 @@ body{
 	cursor:pointer;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 	filter: alpha(opacity=20);
-}
+}*/
 
 /*.magazine .region:hover{
 	opacity:0.5;
